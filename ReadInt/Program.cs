@@ -11,7 +11,16 @@ namespace ReadInt
         static void Main(string[] args)
         {
             int number;
-            string userInput = "";
+
+            number = ConvertStringToInt();
+
+            Console.WriteLine($"Ваше число: {number}");
+        }
+
+        static int ConvertStringToInt()
+        {
+            int number;
+            string userInput;
 
             do
             {
@@ -19,7 +28,7 @@ namespace ReadInt
                 userInput = Console.ReadLine();
             } while (int.TryParse(userInput, out number) == false);
 
-            Console.WriteLine($"Ваше число: {number}");
+            return number;
         }
     }
 }
