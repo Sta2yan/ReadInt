@@ -12,12 +12,12 @@ namespace ReadInt
         {
             int number;
 
-            number = ConvertStringToInt();
+            number = GetNumberFromString();
 
             Console.WriteLine($"Ваше число: {number}");
         }
 
-        static int ConvertStringToInt()
+        static int GetNumberFromString()
         {
             int number;
             string userInput;
